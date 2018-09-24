@@ -8,3 +8,8 @@ RUN conda install --yes \
     'pylint' \
     'radon' \
     && conda clean -yt
+
+RUN conda update pylint
+
+VOLUME ["/home/jovyan/work"]
+WORKDIR /home/jovyan/work
